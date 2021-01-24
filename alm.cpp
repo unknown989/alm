@@ -8,11 +8,11 @@ using namespace std;
 void readFile(string filename);
 
 int main(int argc,char* argv[]){
-        std::string arg = argv[1];
-        if(!arg.c_str()){
+        if(!argv[1]){
                 cout << "No file Included" << endl;
                 return 1;
         }
+        std::string arg = argv[1];
         if(arg == "-h" || arg == "--help"){
                 cout << "Usage : alm <filename>\nHelp: alm <-h><--help>\nVersion: alm -v" << endl;
                 return 0;
